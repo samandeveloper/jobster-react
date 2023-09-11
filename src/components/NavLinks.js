@@ -1,7 +1,7 @@
 //we use this file in both big and small screens for sidebar (including stats, All Jobs, Add Job, profile)
 import { NavLink } from "react-router-dom";
 import links from "../utils/Links";
-import { toggleSidebar } from "../features/user/userSlice";
+// import { toggleSidebar } from "../features/user/userSlice";
 
 const NavLinks = ({ toggle }) => {
   //pass the toggleSidebar which is the reducer in userSlice.js
