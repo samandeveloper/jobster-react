@@ -8,7 +8,7 @@ import { useState, useMemo } from "react";
 const SearchContainer = () => {
   const [localSearch, setLocalSearch] = useState("");
   // searchStatus in allJobsSlice.js>initialState is the same as the status in the jobSlice.js>initialState. the difference is that we also have 'all' in the searchStatus
-  const { isLoading, search, searchStatus, searchType, sort, sortOptions } =
+  const { isLoading, searchStatus, searchType, sort, sortOptions } =
     useSelector((store) => store.allJobs);
   const { jobTypeOptions, statusOptions } = useSelector((store) => store.job); //bring it from jobSlice.js because these are the same in the search form so we can use it in the return >list property
   const dispatch = useDispatch();
