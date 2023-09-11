@@ -57,7 +57,7 @@ const SearchContainer = () => {
             labelText="status"
             name="searchStatus"
             value={searchStatus}
-            handleChange={handleChange}
+            handleChange={handleSearch}
             list={["all", ...statusOptions]}
           />
           {/* search by type*/}
