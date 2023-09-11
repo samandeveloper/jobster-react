@@ -24,7 +24,7 @@ const SearchContainer = () => {
   };
 
   const debounce = () => {
-    console.log("debounce called");
+    // console.log("debounce called");
     let timeoutID;
     return (e) => {
       setLocalSearch(e.target.value);
@@ -36,7 +36,10 @@ const SearchContainer = () => {
     };
   };
 
-  const optimizedDebounce = useMemo(() => {debounce(); // eslint-disable-next-line}, []); //invoke it once
+  const optimizedDebounce = useMemo(() => {
+    debounce();
+    // eslint-disable-next-line
+  }, []); //invoke it once
   return (
     <Wrapper>
       <form className="form">
