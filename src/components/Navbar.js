@@ -6,7 +6,7 @@ import { useState } from "react"; //in the navbar, if we click on the name of th
 import { useDispatch, useSelector } from "react-redux"; //to bring reducers and initialState from userSlice.js
 import {
   toggleSidebar,
-  logoutUser,
+  // logoutUser,
   clearStore,
 } from "../features/user/userSlice"; //for toggling hamburger icon
 
