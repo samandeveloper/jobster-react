@@ -24,6 +24,7 @@ const JobsContainer = () => {
   //invoke the getAllJobs function which is the GET all jobs function
   useEffect(() => {
     dispatch(getAllJobs());
+    // eslint-disable-next-line
   }, [page, search, searchStatus, searchType, sort]); //all the 'search form' fields plus the page number- when one of these items change then we invoke the getAllJobs function
 
   //if in jobContainer we are looking for the job
