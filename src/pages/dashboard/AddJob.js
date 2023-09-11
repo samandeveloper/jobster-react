@@ -15,7 +15,7 @@ import { useEffect } from "react";
 const AddJob = () => {
   //bring all the inititalState from jobSlice using useSelector
   const {
-    // isLoading,
+    isLoading,
     position,
     company,
     jobLocation,
