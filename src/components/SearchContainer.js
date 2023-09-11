@@ -36,7 +36,7 @@ const SearchContainer = () => {
     };
   };
 
-  const optimizedDebounce = useMemo(() => debounce(), []); //invoke it once
+  const optimizedDebounce = useMemo(() => {debounce(); // eslint-disable-next-line}, []); //invoke it once
   return (
     <Wrapper>
       <form className="form">
