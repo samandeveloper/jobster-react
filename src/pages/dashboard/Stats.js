@@ -1,11 +1,11 @@
-//dthis file is related to the ashboard>stats page
+//this file is related to the ashboard>stats page
 import { useEffect } from "react";
-import { StatsContainer, ChartsContainer } from "../../components";
+import { StatsContainer, Loading, ChartsContainer } from "../../components";
 import { useDispatch, useSelector } from "react-redux";
 import { showStats } from "../../features/allJobs/allJobsSlice";
 
 const Stats = () => {
-  const { monthlyApplications } = useSelector(
+  const { isLoading, monthlyApplications } = useSelector(
     (store) => store.allJobs
   ); //from initialState in allJobsSlice.js bring these two properties
 
@@ -22,3 +22,4 @@ const Stats = () => {
   );
 };
 export default Stats;
+
